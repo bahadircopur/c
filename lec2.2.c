@@ -7,6 +7,7 @@ int main(void)
     scanf("%d %d",&saat,&dakika);
     daci = (float)dakika*6;
     saci = (float)(saat*30)+(float)(dakika/2);
+    if (saat>12) saat = saat-12;
     if (daci>saci) aci = daci-saci;
     else aci = saci-daci; 
     if (aci>180)  aci = 360-aci; 
